@@ -8,10 +8,10 @@ namespace EssentialTools.Models
     public class ShoppingCart
     {
         public IEnumerable<Product> Products { get; set; }
-        private LinqValueCalculator calc;
+        private IValueCalculator calc;
 
 
-        public ShoppingCart(LinqValueCalculator calcParam)
+        public ShoppingCart(IValueCalculator calcParam)
         {
             calc = calcParam;
         }
